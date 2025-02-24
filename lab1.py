@@ -24,5 +24,7 @@ print(url)
 with requests.get(url) as response: 
 #    for key in response.headers:
 #        print(f"{key}: {response.headers[key]}")
-#    1o
+#   1o
     print(f"Server: {response.headers.get('Server')}")
+#   2o
+    print(f"Has cookies: {'Set-Cookie' in response.headers}")
