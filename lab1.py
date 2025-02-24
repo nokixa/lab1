@@ -16,5 +16,8 @@ def more(text):
 #    html = response.text
 #    more(html)
 
-input = input('Enter URL: ')
+url = input('Enter URL: ')
 print(input)
+
+with requests.get(url) as response: 
+    print(response.text)
