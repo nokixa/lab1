@@ -16,5 +16,6 @@ def more(text):
 #    html = response.text
 #    more(html)
 
-input = input('Enter URL: ')
-print(input)
+url = input('Enter URL: ')
+if not url.startswith('https://'): url = 'https://' + url
+print(url)
