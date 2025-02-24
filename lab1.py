@@ -1,4 +1,4 @@
-import requests  
+import requests
 
 def more(text):
     count = 0
@@ -10,8 +10,11 @@ def more(text):
             if reply == 'n':
                 break
 
-url = 'http://python.org/'  
+#url = 'http://python.org/'  
 
-with requests.get(url) as response: 
-    html = response.text
-    more(html)
+#with requests.get(url) as response: 
+#    html = response.text
+#    more(html)
+
+input = input('Enter URL: ')
+print(input)
